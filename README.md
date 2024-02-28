@@ -29,3 +29,23 @@ To create a new weapon, you can instantiate a weapon object from the `HelixWeapo
 
 ```lua
 local weapon = helixWeapons["ACM"](Vector(0, 0, 0), Rotator(0.0, 0.0, 0.0))
+```
+
+## Configuring Weapon Parts
+
+You can customize the weapon by attaching or removing parts. For instance, to set an optic part:
+
+```lua
+weapon:SetPart("optic", "SM_Optic1")
+```
+To remove a part, simply call:
+```lua
+weapon:RemovePart("optic")
+```
+
+To reset the weapon to its default state:
+```lua
+weapon:ResetToDefault()
+```
+
+
