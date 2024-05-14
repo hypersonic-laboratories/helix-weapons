@@ -1,9 +1,9 @@
 # vault configurations
 [meta]
     # friendly name
-    title =                 "Default Weapons"
+    title =                 "New Weapons"
     # contributors
-    author =                "nanos™"
+    author =                "Kerke"
     # version
     version =               "1.0.1"
 
