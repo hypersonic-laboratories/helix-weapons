@@ -1,0 +1,20 @@
+name: Upload Package to Helix
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  upload-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use deploy package action
+        uses: hypersonic-laboratories/deploy-package@main
+        with:
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+          package_name: 'helix-weapons'
