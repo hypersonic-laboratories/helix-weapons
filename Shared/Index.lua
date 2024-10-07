@@ -302,9 +302,8 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self.optic = "helix::"
 	self.reargrip = "helix::"
 
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Queen-80_RearGrip", "RearGrip", Vector(-0.5, 0, 0),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_Queen-80_Mag", "Mag", Vector(-11.5, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Queen-80_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_Queen-80_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 30)
@@ -314,7 +313,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1.25, -1))
+	self:SetRightHandOffset(Vector(6, 1.25, -1.5))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.15)
 	self:SetWallbangSettings(200, 0.75)
@@ -671,7 +670,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self.muzzle = "helix::"
 	self.optic = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Austro_Mag", "Mag", Vector(-14, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Austro_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
