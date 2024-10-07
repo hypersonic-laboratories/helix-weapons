@@ -46,8 +46,8 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self.optic = "helix::"
 
 
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_ACM_Mag", "Mag", Vector(15, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_ACM_Stock", "Stock", Vector(-3, 0, 11), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_ACM_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_ACM_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 30)
@@ -173,10 +173,9 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self.optic = "helix::"
 	self.reargrip = "helix::"
 
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_Patriot_Mag", "Mag", Vector(15, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.stock .. "SM_Patriot_RearGrip", "RearGrip", Vector(0, 0, 0),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Patriot_Stock", "Stock", Vector(-3, 0, 12), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_Patriot_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.stock .. "SM_Patriot_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Patriot_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 30)
@@ -431,9 +430,9 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_KAL_Stock", "Stock", Vector(-3, 0, 7), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_KAL_RearGrip")
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_KAL_Mag", "Mag", Vector(16, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_KAL_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_KAL_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_KAL_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -560,10 +559,9 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self.reargrip = "helix::"
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Condor_RearGrip", "RearGrip", Vector(-6.5, 0, 10),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Condor_IronSight", "Sight", Vector(-4.4, 0, 16), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("mag", "helix::SM_Condor_MagFull", "Mag", Vector(9, 0, 10), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Condor_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Condor_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Condor_MagFull", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -574,7 +572,7 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(-7.5, 1.5, 0))
+	self:SetRightHandOffset(Vector(1, 1.5, 0))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.11)
 	self:SetWallbangSettings(200, 0.75)
@@ -790,12 +788,10 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self.reargrip = "helix::"
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Pit_Viper_Mag", "Mag", Vector(5, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Pit_Viper_IronSight", "IronSight", Vector(30, 0, 6),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Pit_Viper_RearGrip", "RearGrip", Vector(-10, 0, 0),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Pit_Viper_Stock", "Stock", Vector(-14, 0, 2), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Pit_Viper_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Pit_Viper_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Pit_Viper_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Pit_Viper_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -804,7 +800,7 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(-7.5, 1.5, 7.5))
+	self:SetRightHandOffset(Vector(1, 1, 1))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -913,11 +909,13 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self.muzzle = "helix::"
 	self.optic = "helix::"
 	self.stock = "helix::"
+	self.reargrip = "helix::"
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_MK4_Mag", "Mag", Vector(14, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_MK4_IronSight", "Sight", Vector(14, 0, 13), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_MK4_Stock", "Stock", Vector(0, 0, 10.6), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_MK4_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_MK4_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_MK4_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_MK4_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -1030,11 +1028,10 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self.reargrip = "helix::"
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_SovWhisper_Mag", "Mag", Vector(16, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_SovWhisper_IronSight", "Sight", Vector(61, 0, 10), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_SovWhisper_RearGrip", "RearGrip", Vector(0, 0, 0),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_SovWhisper_Stock", "Stock", Vector(-2, 0, 8), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_SovWhisper_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_SovWhisper_IronSight", "Rail", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_SovWhisper_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_SovWhisper_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -1157,11 +1154,10 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self.stock = "helix::"
 	self.muzzle = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Krink_Mag", "Mag", Vector(16, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Krink_IronSight", "Sight", Vector(15, 0, 11), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Krink_RearGrip", "RearGrip", Vector(1.5, 0, 5),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Krink_Stock", "Stock", Vector(-3, 0, 7), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Krink_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Krink_IronSight", "Rail", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Krink_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Krink_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
