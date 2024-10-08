@@ -2416,7 +2416,7 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Gaston_Mag", "Mag", Vector(-0.5, 0, -5), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Gaston_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(7, 1000)
@@ -2425,9 +2425,8 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetLeftHandBone("b_gun_lefthand")
 	self:SetRightHandOffset(Vector(2, 1, 0.75))
-	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
+	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2516,7 +2515,7 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Mirage_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Mirage_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -2526,9 +2525,8 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(2.5, 1, -0.5))
-	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
+	self:SetRightHandOffset(Vector(3, 1, 0))
+	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2621,9 +2619,8 @@ function NewHelixWeapons.Fierro:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(2.75, 1, 1.5))
-	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
+	self:SetRightHandOffset(Vector(2.75, 1, 0))
+	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2710,7 +2707,7 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 		"SM_Optic8"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Banshee_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Banshee_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -2720,9 +2717,8 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(0, 1, 0.25))
-	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
+	self:SetRightHandOffset(Vector(2, 1, 0.25))
+	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2807,7 +2803,7 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Roger_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Roger_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(7, 1000)
@@ -2816,9 +2812,8 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, 1.75))
-	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
+	self:SetRightHandOffset(Vector(1.5, 1, 0.5))
+	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
