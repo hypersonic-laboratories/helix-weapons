@@ -3718,7 +3718,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 	self.stockList = {}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_CS-446_Mag", "Mag", Vector(25, 0, 5), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_CS-446_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -3729,7 +3729,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(2.25, 1, -4.5))
+	self:SetRightHandOffset(Vector(2.25, 1, 0))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(2)
 	self:SetWallbangSettings(200, 0.75)
@@ -3821,7 +3821,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 	self.stockList = {}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Ronin-777_Mag", "Mag", Vector(15, 1.5, 7), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Ronin-777_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(10, 1000)
@@ -3831,7 +3831,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(-0.5, 2.5, -2.5))
+	self:SetRightHandOffset(Vector(-0.5, 2.5, 0))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(2)
 	self:SetWallbangSettings(200, 0.75)
@@ -3920,7 +3920,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 		"SM_OpticSniper6"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_DMC-68_Mag", "Mag", Vector(17.3, 0, -2), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_DMC-68_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(10, 1000)
 	self:SetDamage(90)
@@ -3929,7 +3929,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(4.5, 1, 6.5))
+	self:SetRightHandOffset(Vector(1.5, 1, 0))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(2)
 	self:SetWallbangSettings(200, 0.75)
