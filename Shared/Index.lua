@@ -3367,9 +3367,9 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_LWS-32_Mag", "Mag", Vector(16, 0, 3), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_LWS-32_IronSight", "Sight", Vector(43, 0, 15), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_LWS-32_Stock", "Stock", Vector(-8.3, 0, 13), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_LWS-32_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_LWS-32_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_LWS-32_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(47, 1000)
 	self:SetDamage(25)
@@ -3480,11 +3480,11 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 		"SM_Stock9"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_KFS_Mag", "Mag", Vector(9, 0, 2), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", "helix::SM_KFS_RearGrip", "RearGrip", Vector(-7, 0, 2), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_KFS_Stock", "Stock", Vector(-12, 0, 4.6), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_KFS_IronSight", "IronSight", Vector(83, 0, 6.5), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("muzzle", "helix::SM_KFS_Muzzle", "Muzzle", Vector(86.5, 0, 7.5), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_KFS_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", "helix::SM_KFS_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_KFS_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_KFS_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("muzzle", "helix::SM_KFS_Muzzle", "Muzzle", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -3495,7 +3495,7 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(-5, 1.5, 7))
+	self:SetRightHandOffset(Vector(1, 1.5, 0))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.175)
 	self:SetWallbangSettings(200, 0.6)
@@ -3601,10 +3601,9 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Sabra_Mag", "Mag", Vector(1.5, 0, 6), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", "helix::SM_Sabra_RearGrip", "RearGrip", Vector(-12.5, 1.6, 4),
-		Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_Sabra_Stock", "Stock", Vector(-23, 1.6, 11), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Sabra_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", "helix::SM_Sabra_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_Sabra_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(47, 1000)
@@ -3614,7 +3613,7 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(-10.5, 3.5, 6))
+	self:SetRightHandOffset(Vector(1.5, 1, 0))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.175)
 	self:SetWallbangSettings(200, 0.6)
