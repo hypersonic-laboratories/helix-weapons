@@ -2440,7 +2440,9 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	-- self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Gaston_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2540,7 +2542,9 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	-- self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Mirage_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2634,7 +2638,9 @@ function NewHelixWeapons.Fierro:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol_Fierro")
+	self:SetAnimationReload("helix::A_Fierro_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2732,7 +2738,9 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Banshee_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2827,7 +2835,9 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Roger_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
