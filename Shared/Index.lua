@@ -2936,8 +2936,10 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
+	self:SetAnimationReload("helix::A_Roma-12_ReloadShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3026,8 +3028,10 @@ function NewHelixWeapons.Finisher:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
+	self:SetAnimationReload("helix::A_Finisher_ReloadShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3116,8 +3120,10 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
+	self:SetAnimationReload("helix::A_KTK_ReloadShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3208,8 +3214,10 @@ function NewHelixWeapons.Remi:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB")
+	self:SetAnimationReload("helix::A_Remi_ReloadShotgunB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3294,8 +3302,10 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB")
+	self:SetAnimationReload("helix::A_DB-12_ReloadShotgunB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
