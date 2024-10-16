@@ -3142,8 +3142,8 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
 	self:SetAnimationFire("helix::A_Moss500_Fire")
 
-	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
-	self:SetAnimationReload("helix::A_KTK_ReloadShotgunA")
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgun_KTK")
+	self:SetAnimationReload("helix::A_KTK_ReloadShotgun_KTK")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3324,8 +3324,8 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
-	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB")
-	self:SetAnimationReload("helix::A_DB-12_ReloadShotgunB")
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgun_DB-12")
+	self:SetAnimationReload("helix::A_DB-12_ReloadShotgun_DB-12")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
