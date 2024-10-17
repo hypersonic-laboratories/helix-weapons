@@ -46,8 +46,8 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self.optic = "helix::"
 
 
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_ACM_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_ACM_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_ACM_Mag", "Mag", Vector(15, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_ACM_Stock", "Stock", Vector(-3, 0, 11), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 30)
@@ -57,7 +57,7 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, 1))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.2)
 	self:SetWallbangSettings(200, 0.75)
@@ -75,7 +75,7 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -173,9 +173,10 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self.optic = "helix::"
 	self.reargrip = "helix::"
 
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_Patriot_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.stock .. "SM_Patriot_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Patriot_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_Patriot_Mag", "Mag", Vector(15, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.stock .. "SM_Patriot_RearGrip", "RearGrip", Vector(0, 0, 0),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Patriot_Stock", "Stock", Vector(-3, 0, 12), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 30)
@@ -185,7 +186,7 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1, -0.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -203,7 +204,7 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -302,8 +303,9 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self.optic = "helix::"
 	self.reargrip = "helix::"
 
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Queen-80_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_Queen-80_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Queen-80_RearGrip", "RearGrip", Vector(-0.5, 0, 0),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_Queen-80_Mag", "Mag", Vector(-11.5, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 30)
@@ -313,7 +315,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(6, 1.25, -1.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.15)
 	self:SetWallbangSettings(200, 0.75)
@@ -331,7 +333,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_Queen-80_MagEmpty")
@@ -429,9 +431,9 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_KAL_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_KAL_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("mag", self.mag .. "SM_KAL_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_KAL_Stock", "Stock", Vector(-3, 0, 7), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_KAL_RearGrip")
+	self:AddStaticMeshAttached("mag", self.mag .. "SM_KAL_Mag", "Mag", Vector(16, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -442,7 +444,7 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(0.5, 1, 1.25))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.19)
 	self:SetWallbangSettings(200, 0.75)
@@ -460,7 +462,7 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -558,9 +560,10 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self.reargrip = "helix::"
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Condor_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Condor_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("mag", "helix::SM_Condor_MagFull", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Condor_RearGrip", "RearGrip", Vector(-6.5, 0, 10),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Condor_IronSight", "Sight", Vector(-4.4, 0, 16), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Condor_MagFull", "Mag", Vector(9, 0, 10), Rotator(0, 0, 0))
 
 
 
@@ -571,7 +574,7 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1.5, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.11)
 	self:SetWallbangSettings(200, 0.75)
@@ -589,7 +592,7 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -670,7 +673,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self.muzzle = "helix::"
 	self.optic = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Austro_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Austro_Mag", "Mag", Vector(-14, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -679,7 +682,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.75, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -697,7 +700,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -787,10 +790,12 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self.reargrip = "helix::"
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Pit_Viper_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Pit_Viper_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Pit_Viper_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Pit_Viper_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Pit_Viper_Mag", "Mag", Vector(5, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Pit_Viper_IronSight", "IronSight", Vector(30, 0, 6),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Pit_Viper_RearGrip", "RearGrip", Vector(-10, 0, 0),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Pit_Viper_Stock", "Stock", Vector(-14, 0, 2), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -799,7 +804,7 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, 1))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -817,7 +822,7 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -908,13 +913,11 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self.muzzle = "helix::"
 	self.optic = "helix::"
 	self.stock = "helix::"
-	self.reargrip = "helix::"
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_MK4_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_MK4_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_MK4_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_MK4_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_MK4_Mag", "Mag", Vector(14, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_MK4_IronSight", "Sight", Vector(14, 0, 13), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_MK4_Stock", "Stock", Vector(0, 0, 10.6), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -923,7 +926,7 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(2, 1.5, 0.25))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -941,7 +944,7 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -1027,10 +1030,11 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self.reargrip = "helix::"
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_SovWhisper_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_SovWhisper_IronSight", "Rail", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_SovWhisper_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_SovWhisper_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_SovWhisper_Mag", "Mag", Vector(16, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_SovWhisper_IronSight", "Sight", Vector(61, 0, 10), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_SovWhisper_RearGrip", "RearGrip", Vector(0, 0, 0),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_SovWhisper_Stock", "Stock", Vector(-2, 0, 8), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -1039,7 +1043,7 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, -0.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -1057,7 +1061,7 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -1153,10 +1157,11 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self.stock = "helix::"
 	self.muzzle = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Krink_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Krink_IronSight", "Rail", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Krink_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Krink_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Krink_Mag", "Mag", Vector(16, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Krink_IronSight", "Sight", Vector(15, 0, 11), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Krink_RearGrip", "RearGrip", Vector(1.5, 0, 5),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Krink_Stock", "Stock", Vector(-3, 0, 7), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 30)
 	self:SetDamage(30)
@@ -1165,7 +1170,7 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.1)
 	self:SetWallbangSettings(200, 0.75)
@@ -1183,7 +1188,7 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
@@ -1280,9 +1285,10 @@ function NewHelixWeapons.Fang:Constructor(location, rotation)
 	self.stock = "helix::"
 	self.muzzle = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Fang_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Fang_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Fang_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Fang_Mag", "Mag", Vector(17, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Fang_RearGrip", "RearGrip", Vector(4, 0, 11),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Fang_Stock", "Stock", Vector(2, 0, 17.3), Rotator(0, 0, 0))
 
 
 
@@ -1293,7 +1299,7 @@ function NewHelixWeapons.Fang:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 0, 0.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -1311,7 +1317,7 @@ function NewHelixWeapons.Fang:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -1399,10 +1405,11 @@ function NewHelixWeapons.PP:Constructor(location, rotation)
 	self.stock = "helix::"
 	self.muzzle = "helix::"
 
-	self:AddStaticMeshAttached("sight", "helix::SM_PP-Y_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("mag", "helix::SM_PP-Y_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_PP-Y_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_PP-Y_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_PP-Y_IronSight", "IronSight", Vector(-2, 0, 10.9), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_PP-Y_Mag", "Mag", Vector(11, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_PP-Y_RearGrip", "RearGrip", Vector(1, 0, 5),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_PP-Y_Stock", "Stock", Vector(-4, 0, 9), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(15)
@@ -1410,8 +1417,9 @@ function NewHelixWeapons.PP:Constructor(location, rotation)
 	self:SetRecoil(0.25)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
-	self:SetRightHandOffset(Vector(1.5, 1, 0))
-	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(-57, 45, 52))
+	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
 
@@ -1428,7 +1436,7 @@ function NewHelixWeapons.PP:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -1514,8 +1522,8 @@ function NewHelixWeapons.Vulcan:Constructor(location, rotation)
 
 	self.stock = "helix::"
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Vulcan_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", self.stock .. "SM_Vulcan_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Vulcan_Mag", "Mag", Vector(15, 0, -7), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", self.stock .. "SM_Vulcan_Stock", "Mag", Vector(-3, 0, 7.3), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(15)
@@ -1524,7 +1532,7 @@ function NewHelixWeapons.Vulcan:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, 0.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -1542,7 +1550,7 @@ function NewHelixWeapons.Vulcan:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -1619,8 +1627,8 @@ function NewHelixWeapons.Freq:Constructor(location, rotation)
 		"SM_Stock6"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Freq_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Freq_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Freq_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Freq_IronSight", "Sight", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(15)
@@ -1628,7 +1636,8 @@ function NewHelixWeapons.Freq:Constructor(location, rotation)
 	self:SetRecoil(0.25)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
-	self:SetRightHandOffset(Vector(1.5, 1, 0.25))
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -1646,7 +1655,7 @@ function NewHelixWeapons.Freq:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -1727,7 +1736,7 @@ function NewHelixWeapons.Convert:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Convert_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Convert_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(15)
@@ -1735,7 +1744,8 @@ function NewHelixWeapons.Convert:Constructor(location, rotation)
 	self:SetRecoil(0.25)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
-	self:SetRightHandOffset(Vector(1.25, 1, 0.25))
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -1753,7 +1763,7 @@ function NewHelixWeapons.Convert:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -1836,11 +1846,12 @@ function NewHelixWeapons.Orion:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Orion_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Orion_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("muzzle", "helix::SM_Orion_Muzzle", "Muzzle", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_Orion_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stockSocket", "helix::SM_Orion_StockSocket", "Stock_Socket", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Orion_Mag", "Mag", Vector(6.5, 0, 8), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Orion_IronSight", "Sight", Vector(3, 0, 17), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("muzzle", "helix::SM_Orion_Muzzle", "Muzzle", Vector(26, 0, 13.7), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_Orion_Stock", "Stock", Vector(-12, 0, 15), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stockSocket", "helix::SM_Orion_StockSocket", "StockSocket", Vector(-10, 0, 15),
+		Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 1000)
@@ -1850,7 +1861,7 @@ function NewHelixWeapons.Orion:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -1868,7 +1879,7 @@ function NewHelixWeapons.Orion:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -1949,9 +1960,9 @@ function NewHelixWeapons.PM99:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_PM-99_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_PM-99_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_PM-99_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_PM-99_Mag", "Mag", Vector(5, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_PM-99_IronSight", "Sight", Vector(-6.2, 0, 16), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_PM-99_Stock", "Stock", Vector(-10, 0, 13), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 1000)
@@ -1961,8 +1972,8 @@ function NewHelixWeapons.PM99:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1.5, 0))
-	self:SetHandlingMode(HandlingMode.LongWeapon)
+	self:SetRightHandOffset(Vector(-57, 45, 52))
+	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
 
@@ -1979,7 +1990,7 @@ function NewHelixWeapons.PM99:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -2061,10 +2072,10 @@ function NewHelixWeapons.M77:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_M77_Mag_X", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_M77_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_M77_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("belt", "helix::SM_M77_Belt", "Belt", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_M77_Mag_X", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_M77_IronSight", "Sight", Vector(13, 0, 10.7), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_M77_Stock", "Stock", Vector(-8, 0, 5), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("belt", "helix::SM_M77_Belt", "Belt", Vector(15, 0, 5), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 1000)
@@ -2073,7 +2084,8 @@ function NewHelixWeapons.M77:Constructor(location, rotation)
 	self:SetRecoil(0.25)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
-	self:SetRightHandOffset(Vector(2.5, 0.5, 0))
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -2091,7 +2103,7 @@ function NewHelixWeapons.M77:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -2186,9 +2198,9 @@ function NewHelixWeapons.Bison:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Bison_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", "helix::SM_Bison_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_Bison_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Bison_Mag", "Mag", Vector(15, 0, 8.2), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", "helix::SM_Bison_RearGrip", "RearGrip", Vector(0, 0, 5), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_Bison_Stock", "Stock", Vector(-3, 0, 6), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(30, 1000)
@@ -2198,7 +2210,7 @@ function NewHelixWeapons.Bison:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -2216,7 +2228,7 @@ function NewHelixWeapons.Bison:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -2303,9 +2315,9 @@ function NewHelixWeapons.Mouflan:Constructor(location, rotation)
 
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Mouflan_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_Mouflan_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_Mouflan_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Mouflan_Mag", "Mag", Vector(26, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_Mouflan_IronSight", "Sight", Vector(13, 0, 9.6), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_Mouflan_Stock", "Stock", Vector(0, 0, 5.7), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(15)
@@ -2314,7 +2326,7 @@ function NewHelixWeapons.Mouflan:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.075)
 	self:SetWallbangSettings(200, 0.5)
@@ -2332,7 +2344,7 @@ function NewHelixWeapons.Mouflan:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AP5_Fire")
 
 	self:SetMagazineMesh("helix::SM_AP5_Mag_Empty")
@@ -2409,7 +2421,7 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Gaston_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Gaston_Mag", "Mag", Vector(-0.5, 0, -5), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(7, 1000)
@@ -2418,8 +2430,9 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetRightHandOffset(Vector(2, 1, 0.75))
-	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(0, 0, 10))
+	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2440,7 +2453,7 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	-- self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Pistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2508,7 +2521,7 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Mirage_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Mirage_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -2518,8 +2531,9 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetRightHandOffset(Vector(3, 1, 0))
-	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(0, 0, 10))
+	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2540,7 +2554,7 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	-- self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Pistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2612,8 +2626,9 @@ function NewHelixWeapons.Fierro:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetRightHandOffset(Vector(2.75, 1, 0))
-	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(0, 0, 10))
+	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2634,7 +2649,7 @@ function NewHelixWeapons.Fierro:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Pistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2700,7 +2715,7 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 		"SM_Optic8"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Banshee_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Banshee_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 
@@ -2710,8 +2725,9 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetRightHandOffset(Vector(2, 1, 0.25))
-	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(0, 0, 10))
+	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2732,7 +2748,7 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Pistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2796,7 +2812,7 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Roger_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Roger_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(7, 1000)
@@ -2805,8 +2821,9 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 	self:SetRecoil(2)
 	self:SetBulletSettings(1, 30000, 30000, Color(13, 100, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, 1.5), Rotator(0, 0, 0))
-	self:SetRightHandOffset(Vector(1.5, 1, 0.5))
-	self:SetHandlingMode(HandlingMode.SingleHandedWeapon)
+	self:SetLeftHandBone("b_gun_lefthand")
+	self:SetRightHandOffset(Vector(0, 0, 10))
+	self:SetHandlingMode(HandlingMode.DoubleHandedWeapon)
 	self:SetCadence(0.225)
 	self:SetWallbangSettings(400, 0.8)
 
@@ -2827,7 +2844,7 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
 	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Pistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2897,7 +2914,7 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Roma-12_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Roma-12_Mag", "Mag", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(6, 1000, 1)
@@ -2907,7 +2924,7 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	self:SetBulletSettings(6, 10000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(0.5, 1, -1.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.9)
 	self:SetWallbangSettings(100, 0.25)
@@ -2926,7 +2943,7 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
@@ -2997,7 +3014,7 @@ function NewHelixWeapons.Finisher:Constructor(location, rotation)
 	self:SetBulletSettings(6, 10000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(0, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.9)
 	self:SetWallbangSettings(100, 0.25)
@@ -3016,7 +3033,7 @@ function NewHelixWeapons.Finisher:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
@@ -3087,7 +3104,7 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetBulletSettings(6, 10000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(0, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.9)
 	self:SetWallbangSettings(100, 0.25)
@@ -3106,7 +3123,7 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Shotgun")
 	self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
@@ -3179,7 +3196,7 @@ function NewHelixWeapons.Remi:Constructor(location, rotation)
 	self:SetBulletSettings(6, 10000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(0, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 0, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.9)
 	self:SetWallbangSettings(100, 0.25)
@@ -3198,7 +3215,7 @@ function NewHelixWeapons.Remi:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
@@ -3265,7 +3282,7 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetBulletSettings(6, 10000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(3.5, 1, 5.75))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.9)
 	self:SetWallbangSettings(100, 0.25)
@@ -3284,7 +3301,7 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
@@ -3360,9 +3377,9 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_LWS-32_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_LWS-32_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_LWS-32_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_LWS-32_Mag", "Mag", Vector(16, 0, 3), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_LWS-32_IronSight", "Sight", Vector(43, 0, 15), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_LWS-32_Stock", "Stock", Vector(-8.3, 0, 13), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(47, 1000)
 	self:SetDamage(25)
@@ -3371,7 +3388,7 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1, -0.5))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.175)
 	self:SetWallbangSettings(200, 0.6)
@@ -3389,7 +3406,7 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 8)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	-- self:SetAnimationFire("helix::A_Lewis_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
@@ -3473,11 +3490,11 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 		"SM_Stock9"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_KFS_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", "helix::SM_KFS_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_KFS_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("sight", "helix::SM_KFS_IronSight", "IronSight", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("muzzle", "helix::SM_KFS_Muzzle", "Muzzle", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_KFS_Mag", "Mag", Vector(9, 0, 2), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", "helix::SM_KFS_RearGrip", "RearGrip", Vector(-7, 0, 2), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_KFS_Stock", "Stock", Vector(-12, 0, 4.6), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("sight", "helix::SM_KFS_IronSight", "IronSight", Vector(83, 0, 6.5), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("muzzle", "helix::SM_KFS_Muzzle", "Muzzle", Vector(86.5, 0, 7.5), Rotator(0, 0, 0))
 
 
 
@@ -3488,7 +3505,7 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1, 1.5, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.175)
 	self:SetWallbangSettings(200, 0.6)
@@ -3506,7 +3523,7 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 8)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	-- self:SetAnimationFire("helix::A_Lewis_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
@@ -3594,9 +3611,10 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Sabra_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("reargrip", "helix::SM_Sabra_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
-	self:AddStaticMeshAttached("stock", "helix::SM_Sabra_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Sabra_Mag", "Mag", Vector(1.5, 0, 6), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("reargrip", "helix::SM_Sabra_RearGrip", "RearGrip", Vector(-12.5, 1.6, 4),
+		Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("stock", "helix::SM_Sabra_Stock", "Stock", Vector(-23, 1.6, 11), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(47, 1000)
@@ -3606,7 +3624,7 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(0.175)
 	self:SetWallbangSettings(200, 0.6)
@@ -3624,7 +3642,7 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 8)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	-- self:SetAnimationFire("helix::A_Lewis_Fire")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
@@ -3705,7 +3723,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 	self.stockList = {}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_CS-446_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_CS-446_Mag", "Mag", Vector(25, 0, 5), Rotator(0, 0, 0))
 
 
 
@@ -3716,7 +3734,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(2.25, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(2)
 	self:SetWallbangSettings(200, 0.75)
@@ -3737,7 +3755,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 
 	self:SetAnimationFire("helix::A_AWP_Fire")
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
 
@@ -3808,7 +3826,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 	self.stockList = {}
 
 
-	self:AddStaticMeshAttached("mag", "helix::SM_Ronin-777_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_Ronin-777_Mag", "Mag", Vector(15, 1.5, 7), Rotator(0, 0, 0))
 
 
 	self:SetAmmoSettings(10, 1000)
@@ -3818,7 +3836,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(-0.5, 2.5, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(2)
 	self:SetWallbangSettings(200, 0.75)
@@ -3839,7 +3857,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 
 	self:SetAnimationFire("helix::A_AWP_Fire")
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
 
@@ -3907,7 +3925,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 		"SM_OpticSniper6"
 	}
 
-	self:AddStaticMeshAttached("mag", "helix::SM_DMC-68_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
+	self:AddStaticMeshAttached("mag", "helix::SM_DMC-68_Mag", "Mag", Vector(17.3, 0, -2), Rotator(0, 0, 0))
 
 	self:SetAmmoSettings(10, 1000)
 	self:SetDamage(90)
@@ -3916,7 +3934,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 	self:SetBulletSettings(1, 30000, 30000, Color(100, 58, 0))
 	-- ALS NOT IMPLEMENTED self:SetSightTransform(Vector(0, 0, -1), Rotator(-1.5, 0, 0))
 	self:SetLeftHandBone("b_gun_lefthand")
-	self:SetRightHandOffset(Vector(1.5, 1, 0))
+	self:SetRightHandOffset(Vector(-57, 45, 52))
 	self:SetHandlingMode(HandlingMode.LongWeapon)
 	self:SetCadence(2)
 	self:SetWallbangSettings(200, 0.75)
@@ -3937,7 +3955,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 
 	self:SetAnimationFire("helix::A_AWP_Fire")
 	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
 
