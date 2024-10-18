@@ -1,0 +1,25 @@
+name: Upload Package to Helix (Staging)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - staging
+    paths:
+      - Package.toml
+      - Client/**
+      - Server/**
+      - Shared/**
+
+jobs:
+  upload-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use deploy package action
+        uses: hypersonic-laboratories/deploy-package@main
+        with:
+          access_token: ${{ secrets.ACCESS_TOKEN_STAGING }}
+          create: true
+          master_endpoint: "https://dev.helixgame.com/"
+          package_name: 'helix-weapons-staging'
