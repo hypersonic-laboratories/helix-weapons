@@ -1,18 +1,21 @@
 name: Upload Package to Helix
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+    paths:
+      - Package.toml
+      - Client/**
+      - Server/**
+      - Shared/**
 
 jobs:
   upload-package:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Use deploy package action
         uses: hypersonic-laboratories/deploy-package@main
         with:
