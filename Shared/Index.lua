@@ -76,8 +76,10 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_ACM_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -204,8 +206,10 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_Patriot_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -332,8 +336,10 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleB")
+	self:SetAnimationReload("helix::A_Queen-80_ReloadRifleB")
 
 	self:SetMagazineMesh("helix::SM_Queen-80_MagEmpty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -461,8 +467,10 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_KAL_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -590,8 +598,10 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_Condor_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -698,8 +708,10 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleB")
+	self:SetAnimationReload("helix::A_Austro_ReloadRifleB")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -818,8 +830,10 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_Pit_Viper_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -942,8 +956,10 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_MK4_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -1058,8 +1074,10 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_SovWhisper_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -1184,8 +1202,10 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
 	self:SetAnimationFire("helix::A_AK47_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
+	self:SetAnimationReload("helix::A_Krink_ReloadRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -2439,9 +2459,11 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Gaston_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 2)
 
-	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	-- self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationFire("helix::A_Gaston_Fire_RecoilPistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Gaston_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2539,9 +2561,11 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Mirage_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 2)
 
-	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	-- self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationFire("helix::A_Mirage_Fire_RecoilPistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Mirage_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2633,9 +2657,11 @@ function NewHelixWeapons.Fierro:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Fierro_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 2)
 
-	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_Recoil_Fierro")
+	self:SetAnimationFire("helix::A_Fierro_Fire_Recoil_Fierro")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol_Fierro")
+	self:SetAnimationReload("helix::A_Fierro_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2731,9 +2757,11 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Banshee_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 2)
 
-	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationFire("helix::A_Banshee_Fire_RecoilPistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Banshee_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2826,9 +2854,11 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Roger_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 2)
 
-	self:SetAnimationCharacterFire("helix::A_Mannequin_Sight_Fire_Pistol")
-	self:SetAnimationFire("helix::A_DesertEagle_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Pistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationFire("helix::A_Roger_Fire_RecoilPistol")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
+	self:SetAnimationReload("helix::A_Roger_ReloadPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2927,8 +2957,10 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
+	self:SetAnimationReload("helix::A_Roma-12_ReloadShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3017,8 +3049,10 @@ function NewHelixWeapons.Finisher:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
+	self:SetAnimationReload("helix::A_Finisher_ReloadShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3107,8 +3141,10 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA_KTK")
+	self:SetAnimationReload("helix::A_KTK_ReloadShotgunA_KTK")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3199,8 +3235,10 @@ function NewHelixWeapons.Remi:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB")
+	self:SetAnimationReload("helix::A_Remi_ReloadShotgunB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3285,8 +3323,10 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Shotgun")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB_DB-12")
+	self:SetAnimationReload("helix::A_DB-12_ReloadShotgunB_DB-12")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
