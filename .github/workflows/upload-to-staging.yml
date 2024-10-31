@@ -22,4 +22,4 @@ jobs:
           access_token: ${{ secrets.ACCESS_TOKEN_STAGING }}
           create: true
           master_endpoint: "https://dev.helixgame.com/"
-          package_name: 'helix-weapons-staging'
+          package_name: 'helix-weapons'
