@@ -721,7 +721,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self:SetAnimationFire("helix::A_Austro_Fire_RecoilRifleB")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleB")
-	self:SetAnimationReload("helix::A_Austro_Fire_ReloadRifleB")
+	self:SetAnimationReload("helix::A_Austro_ReloadRifleB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleB")
 
