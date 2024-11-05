@@ -3335,7 +3335,7 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	}
 
 
-	self:SetAmmoSettings(6, 1000, 1)
+	self:SetAmmoSettings(2, 1000, 1)
 	self:SetDamage(30)
 	self:SetSpread(70)
 	self:SetRecoil(3)
