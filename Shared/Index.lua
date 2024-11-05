@@ -2986,7 +2986,7 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Roma-12_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilShotgunA")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA_Roma-12")
@@ -3080,7 +3080,7 @@ function NewHelixWeapons.Finisher:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Finisher_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilShotgunA")
 	self:SetAnimationFire("helix::A_Finisher_Fire_RecoilShotgunA")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA")
@@ -3174,7 +3174,7 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_KTK_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilShotgunA")
 	self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA_KTK")
@@ -3270,7 +3270,7 @@ function NewHelixWeapons.Remi:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Remi_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilShotgunB")
 	self:SetAnimationFire("helix::A_Remi_Fire_RecoilShotgunB")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB")
@@ -3360,7 +3360,7 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_DB-12_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire_Heavy")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilShotgunB")
 	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunB_DB-12")
