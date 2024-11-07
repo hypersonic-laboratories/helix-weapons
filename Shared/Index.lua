@@ -3469,9 +3469,12 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_LWS-32_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 8)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilLMG")
 	-- self:SetAnimationFire("helix::A_Lewis_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
+
+	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3586,9 +3589,13 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_KFS_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 8)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
-	-- self:SetAnimationFire("helix::A_Lewis_Fire")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilLMG")
+	self:SetAnimationFire("helix::A_KFS_Fire_RecoilLMG")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
+	self:SetAnimationReload("helix::A_KFS_ReloadLMG")
+
+	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3704,9 +3711,12 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Sabra_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 8)
 
-	self:SetAnimationCharacterFire("helix::AM_Mannequin_Sight_Fire")
-	self:SetAnimationCharacterReload("helix::AM_Mannequin_Reload_Rifle")
+	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilLMG")
 	-- self:SetAnimationFire("helix::A_Lewis_Fire")
+
+	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
+
+	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
