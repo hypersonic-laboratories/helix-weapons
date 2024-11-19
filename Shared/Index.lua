@@ -348,6 +348,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Queen-80_ReloadRifleB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleB")
 
 	self:SetMagazineMesh("helix::SM_Queen-80_MagEmpty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -728,6 +729,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Austro_ReloadRifleB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleB")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
