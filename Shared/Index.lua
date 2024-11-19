@@ -82,6 +82,7 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_ACM_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -214,6 +215,7 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Patriot_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -346,6 +348,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Queen-80_ReloadRifleB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleB")
 
 	self:SetMagazineMesh("helix::SM_Queen-80_MagEmpty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -479,6 +482,7 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_KAL_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -612,6 +616,7 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Condor_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -724,6 +729,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Austro_ReloadRifleB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleB")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -848,6 +854,7 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Pit_Viper_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -976,6 +983,7 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_MK4_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -1096,6 +1104,7 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_SovWhisper_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -1226,6 +1235,7 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Krink_ReloadRifleA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringRifleA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipRifleA")
 
 	self:SetMagazineMesh("helix::SM_AK47_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
@@ -2486,6 +2496,7 @@ function NewHelixWeapons.Gaston:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Gaston_ReloadPistol")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringPistol")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2590,6 +2601,7 @@ function NewHelixWeapons.Mirage:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Mirage_ReloadPistol")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringPistol")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2688,6 +2700,7 @@ function NewHelixWeapons.Fierro:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Fierro_ReloadPistol")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringPistol")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2790,6 +2803,7 @@ function NewHelixWeapons.Banshee:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Banshee_ReloadPistol")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringPistol")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
@@ -2889,6 +2903,7 @@ function NewHelixWeapons.Roger:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Roger_ReloadPistol")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringPistol")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipPistol")
 
 	self:SetMagazineMesh("helix::SM_DesertEagle_Mag_Empty")
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Tee")
