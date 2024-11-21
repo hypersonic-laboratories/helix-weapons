@@ -3495,6 +3495,7 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3616,6 +3617,7 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_KFS_ReloadLMG")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3737,6 +3739,7 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3853,6 +3856,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_CS-446_ReloadSniperA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringSniperA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipSniperA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
@@ -3960,6 +3964,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Ronin-777_ReloadSniperA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringSniperA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipSniperA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
@@ -4063,6 +4068,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_DMC-68_ReloadSniperB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringSniperB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipSniperB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
