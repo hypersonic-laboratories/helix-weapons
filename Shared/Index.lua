@@ -3008,6 +3008,7 @@ function NewHelixWeapons.Roma12:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Roma-12_ReloadShotgunA_Roma-12")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringShotgunA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3102,6 +3103,7 @@ function NewHelixWeapons.Finisher:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Finisher_ReloadShotgunA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringShotgunA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3190,12 +3192,13 @@ function NewHelixWeapons.KTK:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 1)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilShotgunA")
-	self:SetAnimationFire("helix::A_Moss500_Fire")
+	-- self:SetAnimationFire("helix::A_Moss500_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadShotgunA_KTK")
 	self:SetAnimationReload("helix::A_KTK_ReloadShotgunA_KTK")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringShotgunA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipShotgunA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3292,6 +3295,7 @@ function NewHelixWeapons.Remi:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_Remi_ReloadShotgunB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringShotgunB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipShotgunB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3382,6 +3386,7 @@ function NewHelixWeapons.DB12:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_DB-12_ReloadShotgunB_DB-12")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringShotgunB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipShotgunB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Shotgun")
 end
@@ -3490,6 +3495,7 @@ function NewHelixWeapons.LWS32:Constructor(location, rotation)
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3611,6 +3617,7 @@ function NewHelixWeapons.KFS:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_KFS_ReloadLMG")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3732,6 +3739,7 @@ function NewHelixWeapons.Sabra:Constructor(location, rotation)
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadLMG")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringLMG")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipLMG")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular_X")
 end
@@ -3848,6 +3856,7 @@ function NewHelixWeapons.CS446:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_CS-446_ReloadSniperA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringSniperA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipSniperA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
@@ -3955,6 +3964,7 @@ function NewHelixWeapons.Ronin777:Constructor(location, rotation)
 	-- self:SetAnimationReload("helix::A_Ronin-777_ReloadSniperA")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringSniperA")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipSniperA")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
@@ -4058,6 +4068,7 @@ function NewHelixWeapons.DMC68:Constructor(location, rotation)
 	self:SetAnimationReload("helix::A_DMC-68_ReloadSniperB")
 
 	self:SetAnimationCharacterHolster("helix::AM_Player_HolsteringSniperB")
+	self:SetAnimationCharacterEquip("helix::AM_Player_EquipSniperB")
 
 	self:SetCrosshairMaterial("helix::MI_Crosshair_Regular")
 end
