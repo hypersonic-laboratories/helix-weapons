@@ -209,7 +209,7 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_Patriot_ReloadRifleA")
@@ -342,7 +342,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleB")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleB")
 	-- self:SetAnimationReload("helix::A_Queen-80_ReloadRifleB")
@@ -476,7 +476,7 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_KAL_ReloadRifleA")
@@ -610,7 +610,7 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_Condor_ReloadRifleA")
@@ -848,7 +848,7 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_Pit_Viper_ReloadRifleA")
@@ -977,7 +977,7 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_MK4_ReloadRifleA")
@@ -1098,7 +1098,7 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_SovWhisper_ReloadRifleA")
@@ -1229,7 +1229,7 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	self:SetAnimationFire("helix::A_AK47_Fire")
+	-- self:SetAnimationFire("helix::A_AK47_Fire")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_Krink_ReloadRifleA")
