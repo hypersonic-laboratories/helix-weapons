@@ -1712,7 +1712,7 @@ function NewHelixWeapons.Freq:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
-	-- self:SetAnimationFire("helix::A_Freq_Fire_RecoilPistol")
+	self:SetAnimationFire("helix::A_Freq_RapidFireNRecoil_PistolSMG")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
 	-- self:SetAnimationReload("helix::A_Freq_ReloadPistol")
@@ -1944,7 +1944,7 @@ function NewHelixWeapons.Orion:Constructor(location, rotation)
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
 	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
-	-- self:SetAnimationFire("helix::A_Orion_Fire_Recoil")
+	self:SetAnimationFire("helix::A_Orion_RapidFireNRecoil_RifleASMG")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
 	-- self:SetAnimationReload("helix::A_Orion_Reload")
