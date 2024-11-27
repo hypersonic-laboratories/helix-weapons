@@ -1361,7 +1361,7 @@ function NewHelixWeapons.Fang:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Fang_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_RifleASMG")
 	-- self:SetAnimationFire("helix::A_Fang_Fire_Recoil")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
@@ -1483,7 +1483,7 @@ function NewHelixWeapons.PP:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_PP-Y_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_PistolSMG")
 	-- self:SetAnimationFire("helix::A_PP-Y_Fire_RecoilPistol")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
@@ -1602,7 +1602,7 @@ function NewHelixWeapons.Vulcan:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Vulcan_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_RifleASMG")
 	-- self:SetAnimationFire("helix::A_Vulcan_Fire_Recoil")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
@@ -1711,7 +1711,7 @@ function NewHelixWeapons.Freq:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Freq_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_PistolSMG")
 	self:SetAnimationFire("helix::A_Freq_RapidFireNRecoil_PistolSMG")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
@@ -1823,7 +1823,7 @@ function NewHelixWeapons.Convert:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Convert_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_PistolSMG")
 	-- self:SetAnimationFire("helix::A_Convert_Fire_Recoil")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
@@ -1943,7 +1943,7 @@ function NewHelixWeapons.Orion:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_LightMachine_Shot")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_RifleASMG")
 	self:SetAnimationFire("helix::A_Orion_RapidFireNRecoil_RifleASMG")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
@@ -2059,7 +2059,7 @@ function NewHelixWeapons.PM99:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_PM-99_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_RifleASMG")
 	-- self:SetAnimationFire("helix::A_PM-99_Fire_Recoil")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
@@ -2176,7 +2176,7 @@ function NewHelixWeapons.M77:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_M77_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilPistol")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_PistolSMG")
 	-- self:SetAnimationFire("helix::A_M77_Fire_RecoilPistol")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadPistol")
@@ -2306,7 +2306,7 @@ function NewHelixWeapons.Bison:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Bison_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_RifleASMG")
 	-- self:SetAnimationFire("helix::A_Bison_Fire_Recoil")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
@@ -2427,7 +2427,7 @@ function NewHelixWeapons.Mouflan:Constructor(location, rotation)
 	self:SetSoundFire("helix::A_Mouflan_Shot_001")
 	self:SetSoundFireLastBullets("helix::A_SMG_Dry", 6)
 
-	self:SetAnimationCharacterFire("helix::AM_Player_Fire_RecoilRifleA")
+	self:SetAnimationCharacterFire("helix::AM_Player_RapidFireNRecoil_RifleASMG")
 	-- self:SetAnimationFire("helix::A_Mouflan_Fire_Recoil")
 
 	self:SetAnimationCharacterReload("helix::AM_Player_ReloadRifleA")
