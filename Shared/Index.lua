@@ -788,7 +788,7 @@ NewHelixWeapons.Pit_Viper = Weapon.Inherit("Pit_Viper")
 NewHelixWeapons.Pit_Viper.name = "PitViper"
 NewHelixWeapons.Pit_Viper.category = "rifles"
 
-NewHelixWeapons.Pit_Viper.image = 'https://helix-scripters.s3.amazonaws.com/Pit_Viper.png'
+NewHelixWeapons.Pit_Viper.image = 'https://i.imgur.com/UStYZIg.png'
 
 function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self.Super:Constructor(location or Vector(), rotation or Rotator(), "helix::SK_Pit_Viper")
@@ -1792,7 +1792,7 @@ end
 
 NewHelixWeapons.Convert = Weapon.Inherit("Convert")
 NewHelixWeapons.Convert.name = "Convert"
-NewHelixWeapons.Convert.image = 'https://helix-scripters.s3.amazonaws.com/Convert.png'
+NewHelixWeapons.Convert.image = 'https://i.imgur.com/lTnRPCL.png'
 NewHelixWeapons.Convert.category = "smgs"
 
 function NewHelixWeapons.Convert:Constructor(location, rotation)
@@ -1904,7 +1904,7 @@ end
 
 NewHelixWeapons.Orion = Weapon.Inherit("Orion")
 NewHelixWeapons.Orion.name = "Orion"
-NewHelixWeapons.Orion.image = 'https://helix-scripters.s3.amazonaws.com/Orion.png'
+NewHelixWeapons.Orion.image = 'https://i.imgur.com/2OZ8B61.png'
 NewHelixWeapons.Orion.category = "smgs"
 
 function NewHelixWeapons.Orion:Constructor(location, rotation)
@@ -2025,7 +2025,7 @@ end
 
 NewHelixWeapons.PM99 = Weapon.Inherit("PM99")
 NewHelixWeapons.PM99.name = "PM99"
-NewHelixWeapons.PM99.image = 'https://helix-scripters.s3.amazonaws.com/PM99.png'
+NewHelixWeapons.PM99.image = 'https://i.imgur.com/uN5vwyt.png'
 NewHelixWeapons.PM99.category = "smgs"
 
 function NewHelixWeapons.PM99:Constructor(location, rotation)
@@ -2140,7 +2140,7 @@ end
 
 NewHelixWeapons.M77 = Weapon.Inherit("M77")
 NewHelixWeapons.M77.name = "M77"
-NewHelixWeapons.M77.image = 'https://helix-scripters.s3.amazonaws.com/M77.png'
+NewHelixWeapons.M77.image = 'https://i.imgur.com/iCYAsXl.png'
 NewHelixWeapons.M77.category = "smgs"
 
 function NewHelixWeapons.M77:Constructor(location, rotation)
@@ -2259,7 +2259,7 @@ end
 
 NewHelixWeapons.Bison = Weapon.Inherit("Bison")
 NewHelixWeapons.Bison.name = "Bison"
-NewHelixWeapons.Bison.image = 'https://helix-scripters.s3.amazonaws.com/Bison.png'
+NewHelixWeapons.Bison.image = 'https://imgur.com/vkGGzRO'
 NewHelixWeapons.Bison.category = "smgs"
 
 function NewHelixWeapons.Bison:Constructor(location, rotation)
@@ -2389,7 +2389,7 @@ end
 
 NewHelixWeapons.Mouflan = Weapon.Inherit("Mouflan")
 NewHelixWeapons.Mouflan.name = "Mouflan"
-NewHelixWeapons.Mouflan.image = 'https://helix-scripters.s3.amazonaws.com/Mouflan.png'
+NewHelixWeapons.Mouflan.image = 'https://i.imgur.com/xh6heBN.png'
 NewHelixWeapons.Mouflan.category = "smgs"
 
 function NewHelixWeapons.Mouflan:Constructor(location, rotation)
@@ -3221,7 +3221,7 @@ end
 
 NewHelixWeapons.KTK = Weapon.Inherit("KTK")
 NewHelixWeapons.KTK.name = "KTK"
-NewHelixWeapons.KTK.image = 'https://helix-scripters.s3.amazonaws.com/KTK.png'
+NewHelixWeapons.KTK.image = 'https://i.imgur.com/KsUlxNJ.png'
 NewHelixWeapons.KTK.category = "shotguns"
 
 function NewHelixWeapons.KTK:Constructor(location, rotation)
@@ -3317,7 +3317,7 @@ end
 
 NewHelixWeapons.Remi = Weapon.Inherit("Remi")
 NewHelixWeapons.Remi.name = "Remi"
-NewHelixWeapons.Remi.image = 'https://helix-scripters.s3.amazonaws.com/Remi.png'
+NewHelixWeapons.Remi.image = 'https://i.imgur.com/w8fYpyQ.png'
 NewHelixWeapons.Remi.category = "shotguns"
 
 function NewHelixWeapons.Remi:Constructor(location, rotation)
@@ -3415,7 +3415,7 @@ end
 
 NewHelixWeapons.DB12 = Weapon.Inherit("DB12")
 NewHelixWeapons.DB12.name = "DB12"
-NewHelixWeapons.DB12.image = 'https://helix-scripters.s3.amazonaws.com/DB12.png'
+NewHelixWeapons.DB12.image = 'https://i.imgur.com/E50jdRf.png'
 NewHelixWeapons.DB12.category = "shotguns"
 
 function NewHelixWeapons.DB12:Constructor(location, rotation)
@@ -3505,7 +3505,7 @@ end
 
 NewHelixWeapons.LWS32 = Weapon.Inherit("LWS32")
 NewHelixWeapons.LWS32.name = "LWS32"
-NewHelixWeapons.LWS32.image = 'https://helix-scripters.s3.amazonaws.com/LWS32.png'
+NewHelixWeapons.LWS32.image = 'https://i.imgur.com/bFEcbJd.png'
 NewHelixWeapons.LWS32.category = "lmg"
 
 function NewHelixWeapons.LWS32:Constructor(location, rotation)
@@ -3617,7 +3617,7 @@ end
 
 NewHelixWeapons.KFS = Weapon.Inherit("KFS")
 NewHelixWeapons.KFS.name = "KFS"
-NewHelixWeapons.KFS.image = 'https://helix-scripters.s3.amazonaws.com/KFS.png'
+NewHelixWeapons.KFS.image = 'https://i.imgur.com/mwpfqUB.png'
 NewHelixWeapons.KFS.category = "lmg"
 
 function NewHelixWeapons.KFS:Constructor(location, rotation)
@@ -3744,7 +3744,7 @@ end
 
 NewHelixWeapons.Sabra = Weapon.Inherit("Sabra")
 NewHelixWeapons.Sabra.name = "Sabra"
-NewHelixWeapons.Sabra.image = 'https://helix-scripters.s3.amazonaws.com/Sabra.png'
+NewHelixWeapons.Sabra.image = 'https://i.imgur.com/bNElCwB.png'
 NewHelixWeapons.Sabra.category = "lmg"
 
 function NewHelixWeapons.Sabra:Constructor(location, rotation)
@@ -3868,7 +3868,7 @@ end
 
 NewHelixWeapons.CS446 = Weapon.Inherit("CS446")
 NewHelixWeapons.CS446.name = "CS446"
-NewHelixWeapons.CS446.image = 'https://helix-scripters.s3.amazonaws.com/CS446.png'
+NewHelixWeapons.CS446.image = 'https://i.imgur.com/2s6PleX.png'
 NewHelixWeapons.CS446.category = "sniper-rifles"
 
 function NewHelixWeapons.CS446:Constructor(location, rotation)
@@ -3974,7 +3974,7 @@ end
 
 NewHelixWeapons.Ronin777 = Weapon.Inherit("Ronin777")
 NewHelixWeapons.Ronin777.name = "Ronin777"
-NewHelixWeapons.Ronin777.image = 'https://helix-scripters.s3.amazonaws.com/Ronin777.png'
+NewHelixWeapons.Ronin777.image = 'https://i.imgur.com/REq6OaI.png'
 NewHelixWeapons.Ronin777.category = "sniper-rifles"
 
 function NewHelixWeapons.Ronin777:Constructor(location, rotation)
