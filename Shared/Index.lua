@@ -2259,7 +2259,7 @@ end
 
 NewHelixWeapons.Bison = Weapon.Inherit("Bison")
 NewHelixWeapons.Bison.name = "Bison"
-NewHelixWeapons.Bison.image = 'https://imgur.com/vkGGzRO'
+NewHelixWeapons.Bison.image = 'https://imgur.com/vkGGzRO.png'
 NewHelixWeapons.Bison.category = "smgs"
 
 function NewHelixWeapons.Bison:Constructor(location, rotation)
