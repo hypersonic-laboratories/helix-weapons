@@ -53,7 +53,7 @@ function NewHelixWeapons.ACM:Constructor(location, rotation)
 	self:AddStaticMeshAttached("stock", self.stock .. "SM_ACM_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(35)
 	self:SetSpread(28)
 	self:SetRecoil(0.45)
@@ -187,7 +187,7 @@ function NewHelixWeapons.Patriot:Constructor(location, rotation)
 	self:AddStaticMeshAttached("stock", self.stock .. "SM_Patriot_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(30)
 	self:SetRecoil(0.25)
@@ -322,7 +322,7 @@ function NewHelixWeapons.Queen:Constructor(location, rotation)
 	self:AddStaticMeshAttached("mag", self.mag .. "SM_Queen-80_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(25)
 	self:SetSpread(33)
 	self:SetRecoil(0.29)
@@ -458,7 +458,7 @@ function NewHelixWeapons.KAL:Constructor(location, rotation)
 
 
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(27)
 	self:SetRecoil(0.30)
@@ -595,7 +595,7 @@ function NewHelixWeapons.Condor:Constructor(location, rotation)
 
 
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(33)
 	self:SetSpread(30)
 	self:SetRecoil(0.21)
@@ -711,7 +711,7 @@ function NewHelixWeapons.Austro:Constructor(location, rotation)
 
 	self:AddStaticMeshAttached("mag", "helix::SM_Austro_Mag", "Clip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(30)
 	self:SetRecoil(0.25)
@@ -839,7 +839,7 @@ function NewHelixWeapons.Pit_Viper:Constructor(location, rotation)
 	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Pit_Viper_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
 	self:AddStaticMeshAttached("stock", self.stock .. "SM_Pit_Viper_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(30)
 	self:SetRecoil(0.25)
@@ -971,7 +971,7 @@ function NewHelixWeapons.MK4:Constructor(location, rotation)
 	self:AddStaticMeshAttached("stock", self.stock .. "SM_MK4_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_MK4_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(30)
 	self:SetRecoil(0.25)
@@ -1095,7 +1095,7 @@ function NewHelixWeapons.SovWhisper:Constructor(location, rotation)
 	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_SovWhisper_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
 	self:AddStaticMeshAttached("stock", self.stock .. "SM_SovWhisper_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(30)
 	self:SetRecoil(0.25)
@@ -1229,7 +1229,7 @@ function NewHelixWeapons.Krink:Constructor(location, rotation)
 	self:AddStaticMeshAttached("reargrip", self.reargrip .. "SM_Krink_RearGrip", "Grip", Vector(0, 0, 0), Rotator(0, 0, 0))
 	self:AddStaticMeshAttached("stock", self.stock .. "SM_Krink_Stock", "Stock", Vector(0, 0, 0), Rotator(0, 0, 0))
 
-	self:SetAmmoSettings(30, 30)
+	self:SetAmmoSettings(30, 1000)
 	self:SetDamage(30)
 	self:SetSpread(30)
 	self:SetRecoil(0.25)
